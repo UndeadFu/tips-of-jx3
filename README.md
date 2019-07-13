@@ -2,6 +2,10 @@
 
 
 
+
+
+python 版本为 python3.7.0    
+
 01sync.py 是用来将 collections.xls 中的数据同步到数据库 collections.db 中    
 
 
