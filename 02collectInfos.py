@@ -38,13 +38,13 @@ def letsgo3(conn):
 
 import os
 def main():
-	the_path = os.path.dirname(sys.argv[0])
-	os.chdir(the_path)
+
 	if(len(sys.argv)!= 3):
 		print("example:\n\tpython ...py 人物 渡会 ---- 得到该人物绝赞的菜")
 		print("\tpython ...py 品质 紫色 ---- 得到所有紫色物品的采集地点")
 		print("\tpython ...py 物品 佛珠 ---- 得到佛珠的采集地点")
 		return
+	os.chdir(sys.path[0])
 	conn = sqlite3.connect("collections.db")
 	if sys.argv[1] == "人物":
 		letsgo1(conn)
